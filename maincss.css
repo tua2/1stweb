@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.web-logo{
+    font-size: 50px;
+    color: green;
+    top: 0;
+    position:fixed;
+    z-index: 2;
+}
+
+/*định dạng thanh trên*/
+
+#header {
+    height: 55px;
+    position: relative;
+    margin-top: 30px;
+}
+
+/*menu den*/
+
+#nav1{
+    display: inline-block;
+    width:75%;
+    background-color: black;
+    margin-left: 150px;
+    line-height: 55px;
+    border-radius: 10px;
+
+}
+
+div>ul>li{
+    float: left;
+}
+
+#nav1 li{
+    display: block;
+    position: relative;
+}
+
+#nav1 li a {
+    color: white;
+    line-height: 55px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 30px;
+    display: block;
+}
+
+#nav1 li:hover>a {
+    background-color: #ccc;
+    color:black;
+    border-radius: 10px;
+}
+
+/*định dạng icon tìm kiếm*/
+#header .search-icon{
+    color: white;
+    font-size: 15px;
+    line-height: 55px;
+    padding: 20px;
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* định dạng menu trắng*/
+#nav2{
+    background-color: white;
+    position: absolute;
+    width: 85%;
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+#nav2 li a{
+    color: black;
+    line-height: 55px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 25px;
+    font-weight: bold;
+    display: block;
+
+}
+
+#nav2 li:hover>a{
+    color: green;
+}
+
+/*menu con nav2*/
+
+#nav2 li:hover .subnav{
+    display: block;
+}
+
+#nav2 .subnav{
+    display: none;
+    position: absolute;
+    margin-top: 0px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+#nav2 .subnav li:hover{
+    background-color: #ccc;
+
+}
+
+#nav2 .subnav a{
+    color: black;
+}
+
+/*định dạng slider -Halong pic*/
+#slider{
+    position:relative;
+    background-color: black;
+}
+
+#slider .image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.middle{
+    transition: .5s ease;
+    opacity: -1;
+    position: absolute;
+    line-height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#slider:hover .image{
+    opacity: 0.4;
+}
+
+#slider:hover .middle{
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 16px 32px;
+}
+
+#slider .text-content{
+    font-size:50px;
+    color: rgb(5,136,5);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 150px;
+    z-index: 2;
+    display: none;
+}
+
+#slider:hover>div{
+    display: inline;
+}
+
+/*định dạng content*/
+
+#content{
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#leftmenu{
+    width: 13%;
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    margin-left: 20px;
+    border-color: rgb(204,179,81);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+#leftmenu div{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.list div{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#leftmenu .list div:hover{
+    color:green;
+    cursor: pointer;
+}
+
+
+#rightmenu{
+    width: 90%;
+    position: absolute;
+    margin-left: 250px;
+
+}
+
+#select-menu{
+    width: 90%;
+    border-width:5px;
+    border-style: solid;
+    border-color: gainsboro;
+    background-color: ghostwhite;
+    margin-top: 0px;
+
+}
+
+.select-nav{
+    display: inline-block;
+    background-color: seashell;
+    width: 100%;
+}
+
+.select-nav ul{
+    display: inline-block;
+}
+
+.select-choice li{
+    padding: 10px 10px;
+    line-height: 30px;
+}
+
+.select-choice li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maincss.css">
     <title>VieTrip.com</title>
 </head>
-<body>
-    <main>
+<body style="background-image: linear-gradient(90deg, #5be98a, #f9faf9, greenyellow, #5be98a);">
+
+    <main id="main">
         <h1 class="web-logo">VieTrip</h1>
         <div style="margin-top: 60px;"></div>
         <hr/>
-        <div></div>
+        <div id="header">
         <!--thanh đen-->
-        <div>
+        <div id="nav1">
             <ul>
                 <li><a href="">Main page</a></li>
                 <li><a href="">Homestay</a></li>
@@ -25,11 +27,88 @@
                 <li><a href="">Feedback</a></li>
             </ul>
 
-            <div>
-                <i></i>
+            <div class="search-btn">
+                <i class="ti-search search-icon" style="color: white;"></i>
             </div>
         </div>
 
+        <!--thanh trắng-->
+        <div id="nav2">
+            <ul style="list-style: none;">
+                <li><a href="" style="color:green;font-weight: bold;">VieTrip</a></li>
+                <li><a href="">Best place</a></li>
+                <li><a href="">Event</a></li>
+                <li>
+                    <a href="">Destination <input type="text" placeholder="Search..." name="search" style="margin-left: 10px; height: 25px;"></a>
+                </li>
+
+                <!--set up Menu-->
+                <li><a href="">Set up for <i class="ti-angle-down arrow" style="font-size:12px;"></i></a>
+                <ul class="subnav" style="list-style: none;">
+                <li>
+                    <a href="">Restaurant</a>
+                </li>
+            <li>
+                <a href="">Museum</a>
+            </li>
+        <li>
+            <a href="">HomeStay</a>
+        </li>
+    </ul></li>
+
+    <!--Menu city-->
+    <li><a href="">City <i class="ti-angle-down arrow" style="font-size: 12px;"></i></a>
+    <ul class="subnav" style="list-style: none;">
+        <li>
+            <a href="">Hanoi</a>
+        </li>
+        <li><a href="">Hue</a></li>
+        <li><a href="">Hochiminh</a></li>
+
+    </ul></li>
+    <li><a href="">Discount</a></li>
+    <li><a href="">Sign in</a></li>
+    <li><a href="">Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+    
+        <!--Ha long Bay pic-->
+        <div id="slider">
+            <img src="https://res.klook.com/image/upload/c_fill,w_750,h_500,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/qmgtdjekctlyucr8itqw.jpg" alt="Avatar" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text">Welcome to VietNam !!!</div>
+            </div>
+        </div>
+
+        <div id="content">
+            <!--select cá nhân-->
+            <div id="leftmenu">
+                <div class="list">
+                    <div>&#128146;Your home</div>
+                    <div>&#129517;Direction</div>
+                    <div>&#128190;Memory</div>
+                    <div>&#128210;Note</div>
+                    <div>&#9203;History</div>
+                    <div>&#128249;Your videos</div>
+                    <div>&#x1F44D;Favorite</div>
+                </div>
+            </div>
+            <div id="rightmenu">
+                <!--ăn uống-->
+                <div class="select-menu"><div class="select-nav">
+                    <ul class="select-choice" style="list-style: none;">
+                        <li><a href="" style="color: red;font-style: italic;">Cuisine</a></li>
+                        <li><a href=""></a>Food</li>
+                        <li><a href=""></a>Drink</li>
+                        <li><a href=""></a>Dessert</li>
+                        <li><a href="">Set up</a></li>
+                        <li><a href="">Review</a></li>
+                    </ul>
+                </div></div>
+            </div>
+
+        </div>
         <div id="footer">This is footer.</div>
     </main>
 </body>
