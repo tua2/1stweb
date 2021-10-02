@@ -426,3 +426,62 @@ div>ul>li{
     color:black;
     background-color: #ccc;
 }
+
+/*định dạng menu entertain*/
+
+.entertain-list{
+    background-color: white;
+    border-radius: 5px;
+    border-width: 5px;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.enter-item{
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.enter-item img{
+    width: 400px;
+    height: 300px;
+    border-color: indianred;
+    border-radius: 500px;
+    border-width: 5px;
+    border-style: solid;
+
+}
+
+.enter-item img:hover{
+    opacity: 0.7;
+}
+
+.enter-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.enter-item .enter-name{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pagination a{
+    text-decoration: none;
+    color: black;
+}
+
+/*định dạng footer*/
+
+#footer{
+    position: relative;
+    background-color: ivory;
+    margin-top: 3200px;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+}
