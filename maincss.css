@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,400&display=swap");
+
 *{
     padding: 0;
     margin:0;
@@ -479,9 +482,114 @@ div>ul>li{
 
 #footer{
     position: relative;
-    background-color:ivory;
-    margin-top: 600px;
+    background-color: ivory;
+    margin-top: 100px;
     padding: 10px;
     font-size: large;
     font-weight: bold;
 }
+
+/* plan-section */
+.plan-section {
+    background-color:ivory;
+    }
+    .plan-taps {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+    }
+    .plan-taps .plan-tap-item {
+    background: transparent;
+    border: none;
+    padding: 0px 15px ;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    }
+    .plan-taps .plan-tap-item:hover {
+    color: #eaa023;
+    }
+    .plan-taps .plan-tap-item.active {
+    color: #eaa023;
+    }
+    .plan-item {
+    width: calc(100%/2);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+    align-items: center;
+    position: relative;
+    
+    }
+    .plan-tap-content .plan-item:hover .plan-item-price {
+    color: #38becf;
+    }
+    .plan-tap-content .plan-item:hover h3{
+    color: #eaa023;
+    }
+    .plan-tap-content .plan-item::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    border: 1px dashed #ccc;
+    }
+    .plan-item .plan-item-title {
+    display: flex;
+    align-items: center;
+    }
+    .plan-item .plan-item-title img {
+    max-width: 100x;
+    margin-right: 15px;
+    }
+    .plan-item .plan-item-title h3 {
+    font-size: 16px;
+    transition: all 0.5s ease;
+    text-transform: capitalize;
+    }
+    .plan-item .plan-item-price {
+    font-size: 16px;
+    color: #eaa023;
+    transition: all 0.5s ease;
+    }
+    .plan-tap-content {
+    display: none;
+    }
+    .plan-tap-content.active{
+    display: flex;
+    }
+    
+    .container {
+        max-width: 1170px;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .section-padding {
+        padding: 80px 0;
+    }
+    
+    .section-title {
+        width: 100%;
+        text-align: center;
+        padding: 6px 0;
+    }
+    .section-title h2 {
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+    
+    .section-title h2::before {
+        content: attr(data-title);
+        display: block;
+        font-size: 24px;
+        color: #eaa023;
+        font-family: "Dancing Script", cursive;
+        font-weight: 400;
+    }
