@@ -250,3 +250,179 @@ div>ul>li{
     color: black;
     font-weight: bold;
 }
+
+/*định dạng menu cuisine */
+
+.store-list{
+    padding: 30px;
+    background-color: #f9f9f9;
+    padding: 20px 20px;
+    border-width: 0.5px;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+
+}
+
+.store-item{
+    width: 200px;
+    margin-right: 2px;
+    margin-left: 25px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
+    border-color: rgb(165,163,163);
+    border-style:solid;
+    border-radius: 10px;
+    width: 190px;
+}
+
+.store-item img{
+    width: 185px;
+    height: 116px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.store-item img:hover{
+    opacity: 0.6;
+}
+
+.store-item .item-content{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.store-item .store-discr{
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+.store-item .store-rate{
+    margin-top: 5px;
+    color: gray;
+}
+
+/*dịnh dạng video*/
+
+.video-img {
+    margin-top: 20px;
+    margin-left: -100px;
+    margin-bottom: 50px;
+}
+
+.video-control{
+    margin-left: 120px;
+}
+
+.video-img img{
+    width: 520px;
+    height: 300px;
+    float: left;
+    margin-left: 10px;
+}
+
+/*định dạng Homestay*/
+
+.home-item{
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 10px;
+}
+
+.home-item .home-content{
+    display: inline-block;
+    padding: 10px;
+}
+
+.home-content .home-discr{
+    margin-top: 5px;
+}
+
+.home-content .home-rate{
+    margin-top: 5px;
+}
+
+.home-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.home-item img{
+    height: 129px;
+    width: 300px;
+    float:right;
+
+}
+
+.home-item img:hover{
+    opacity: 0.6;
+}
+
+.buy-button{
+    text-decoration: none;
+    color: black;
+    background-color: greenyellow;
+    padding: 11px 16px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.buy-button:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+/*định dạng best place*/
+
+.best-place{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 80%;
+    background-color: rgb(99,184,241);
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.best-place .best-item{
+    background-color: white;
+    width: 200px;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: rgb(224,221,221);
+    border-style: solid;
+    margin-left: 10px;
+}
+
+.best-item .best-content{
+    padding: 5px;
+}
+
+.best-item img{
+    width: 190px;
+    height: 100px;
+}
+
+.best-item .best-discr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.best-button{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 11px 16px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.best-button:hover{
+    color:black;
+    background-color: #ccc;
+}
